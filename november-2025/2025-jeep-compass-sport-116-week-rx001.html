@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rx #001 - 2025 Jeep Compass Sport $116/week | CDD6 Golden Mile Chrysler</title>
+    <meta name="description" content="Get your CDD6 shot! 2025 Jeep Compass Sport for just $116/week. $0 down, 96 months financing. Toronto's Car Doctor prescribes the cure for bad deals.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Bebas+Neue&family=Orbitron:wght@900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --golden-orange: #FF8C00;
+            --pure-white: #FFFFFF;
+            --deep-black: #000000;
+            --light-gray: #F5F5F5;
+            --success-green: #34C759;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--deep-black);
+            background: var(--pure-white);
+        }
+
+        /* Header - Wealthsimple Style */
+        .header {
+            background: var(--pure-white);
+            padding: 1.5rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            cursor: pointer;
+        }
+
+        .golden-mile-logo {
+            height: 60px;
+            width: auto;
+        }
+
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            letter-spacing: 1px;
+            color: var(--deep-black);
+            text-transform: uppercase;
+            font-family: 'Bebas Neue', sans-serif;
+            line-height: 1;
+        }
+
+        .back-link {
+            background: var(--deep-black);
+            color: var(--pure-white);
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: var(--golden-orange);
+        }
+
+        /* Hero Banner - Clean */
+        .hero-banner {
+            background: var(--light-gray);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 1000px;
+            height: 450px;
+            margin: 0 auto 2rem;
+            background: var(--pure-white);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border: 2px solid #e0e0e0;
+        }
+
+        .rx-badge {
+            display: inline-block;
+            background: var(--deep-black);
+            color: var(--pure-white);
+            padding: 0.8rem 2rem;
+            font-weight: 900;
+            font-size: 1.3rem;
+            letter-spacing: 4px;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 450px;
+            gap: 4rem;
+        }
+
+        .vehicle-details {
+            background: var(--pure-white);
+        }
+
+        .vehicle-title {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 3rem;
+            color: var(--deep-black);
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 1px;
+        }
+
+        .price-section {
+            background: var(--light-gray);
+            padding: 3rem;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .weekly-price {
+            font-size: 4.5rem;
+            font-weight: 900;
+            color: var(--golden-orange);
+            margin-bottom: 0.5rem;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .price-note {
+            color: #666;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .spec-item {
+            background: var(--light-gray);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .spec-label {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .spec-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--deep-black);
+        }
+
+        /* Sticky Form - Clean Design */
+        .form-container {
+            position: sticky;
+            top: 120px;
+            height: fit-content;
+        }
+
+        .lead-form {
+            background: var(--pure-white);
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .form-title {
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--deep-black);
+            margin-bottom: 0.5rem;
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 1px;
+        }
+
+        .form-subtitle {
+            color: #666;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--deep-black);
+            font-size: 0.95rem;
+        }
+
+        .required {
+            color: var(--golden-orange);
+        }
+
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--golden-orange);
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .char-counter {
+            text-align: right;
+            font-size: 0.85rem;
+            color: #999;
+            margin-top: 0.5rem;
+        }
+
+        .submit-button {
+            width: 100%;
+            background: var(--deep-black);
+            color: var(--pure-white);
+            border: none;
+            padding: 1.3rem;
+            font-size: 1.2rem;
+            font-weight: 900;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 1px;
+        }
+
+        .submit-button:hover {
+            background: var(--golden-orange);
+            transform: scale(1.02);
+        }
+
+        .submit-button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .error-message {
+            color: var(--golden-orange);
+            font-size: 0.85rem;
+            margin-top: 0.3rem;
+            display: none;
+        }
+
+        .success-message {
+            background: var(--success-green);
+            color: var(--pure-white);
+            padding: 2.5rem;
+            border-radius: 12px;
+            text-align: center;
+            display: none;
+        }
+
+        .success-message h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        /* Footer - Clean */
+        .footer {
+            background: var(--pure-white);
+            color: var(--deep-black);
+            padding: 3rem 2rem;
+            text-align: center;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 6rem;
+        }
+
+        .footer p {
+            margin: 0.8rem 0;
+            font-size: 0.95rem;
+        }
+
+        .disclaimer {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 2rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Cookie Consent Banner */
+        .cookie-consent {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--pure-white);
+            border-top: 1px solid #e0e0e0;
+            padding: 2rem;
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+            z-index: 9999;
+            display: none;
+        }
+
+        .cookie-consent.show {
+            display: block;
+        }
+
+        .cookie-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .cookie-text {
+            flex: 1;
+        }
+
+        .cookie-text h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--deep-black);
+        }
+
+        .cookie-text p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .cookie-text a {
+            color: var(--golden-orange);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .cookie-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-shrink: 0;
+        }
+
+        .cookie-btn {
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .cookie-btn-accept {
+            background: var(--deep-black);
+            color: var(--pure-white);
+            border: none;
+        }
+
+        .cookie-btn-accept:hover {
+            background: var(--golden-orange);
+        }
+
+        .cookie-btn-manage {
+            background: var(--pure-white);
+            color: var(--deep-black);
+            border: 2px solid #e0e0e0;
+        }
+
+        .cookie-btn-manage:hover {
+            border-color: var(--deep-black);
+        }
+
+        .cookie-btn-reject {
+            background: var(--pure-white);
+            color: var(--deep-black);
+            border: 2px solid #e0e0e0;
+        }
+
+        .cookie-btn-reject:hover {
+            border-color: var(--deep-black);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 968px) {
+            .cookie-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .cookie-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .cookie-btn {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 968px) {
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .form-container {
+                position: static;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .logo-section {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .golden-mile-logo {
+                height: 50px;
+            }
+
+            .main-title {
+                font-size: 1.8rem;
+            }
+
+            .vehicle-title {
+                font-size: 2.2rem;
+            }
+
+            .weekly-price {
+                font-size: 3rem;
+            }
+
+            .specs-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-image {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section" onclick="window.location.href='index.html'">
+                <div class="main-title">THE CAR DOCTOR</div>
+                <img src="golden-mile-logo.png" alt="Golden Mile Chrysler" class="golden-mile-logo">
+            </div>
+            <a href="index.html" class="back-link">← Back to All Deals</a>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <span class="rx-badge">Rx #001 - PRESCRIBED NOV 2025</span>
+        <div class="hero-image">[2025 Jeep Compass Sport - Hero Image]</div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Vehicle Details -->
+        <div class="vehicle-details">
+            <h1 class="vehicle-title">2025 Jeep Compass Sport</h1>
+
+            <div class="price-section">
+                <div class="weekly-price">$116/week</div>
+                <div class="price-note">(+HST)</div>
+            </div>
+
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <div class="spec-label">Down Payment</div>
+                    <div class="spec-value">$0</div>
+                </div>
+
+                <div class="spec-item">
+                    <div class="spec-label">Term</div>
+                    <div class="spec-value">96 months</div>
+                </div>
+
+                <div class="spec-item">
+                    <div class="spec-label">Type</div>
+                    <div class="spec-value">Finance</div>
+                </div>
+
+                <div class="spec-item">
+                    <div class="spec-label">Year</div>
+                    <div class="spec-value">2025</div>
+                </div>
+            </div>
+
+            <div style="background: var(--clinical-white); padding: 1.5rem; border-radius: 10px; margin-top: 2rem;">
+                <h3 style="margin-bottom: 1rem; color: var(--emergency-orange);">🔧 What Makes This Deal Special?</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.5rem 0;">✅ Zero down payment</li>
+                    <li style="padding: 0.5rem 0;">✅ Low weekly payments</li>
+                    <li style="padding: 0.5rem 0;">✅ 96-month financing available</li>
+                    <li style="padding: 0.5rem 0;">✅ Subject to credit approval</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Sticky Lead Form -->
+        <div class="form-container">
+            <form class="lead-form" id="leadForm">
+                <h2 class="form-title">💉 GET YOUR CDD6 SHOT</h2>
+                <p class="form-subtitle">Protection from bad deals starts here</p>
+
+                <div id="formFields">
+                    <div class="form-group">
+                        <label class="form-label">Full Name <span class="required">*</span></label>
+                        <input 
+                            type="text" 
+                            class="form-input" 
+                            id="fullName" 
+                            name="fullName" 
+                            required 
+                            placeholder="John Doe"
+                        >
+                        <div class="error-message" id="nameError">Please enter your full name (first and last)</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Email <span class="required">*</span></label>
+                        <input 
+                            type="email" 
+                            class="form-input" 
+                            id="email" 
+                            name="email" 
+                            required 
+                            placeholder="john@example.com"
+                        >
+                        <div class="error-message" id="emailError">Please enter a valid email address</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Phone Number <span class="required">*</span></label>
+                        <input 
+                            type="tel" 
+                            class="form-input" 
+                            id="phone" 
+                            name="phone" 
+                            required 
+                            placeholder="(416) 555-1234"
+                        >
+                        <div class="error-message" id="phoneError">Please enter a valid 10-digit phone number</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Comments (Optional)</label>
+                        <textarea 
+                            class="form-textarea" 
+                            id="comments" 
+                            name="comments" 
+                            maxlength="500"
+                            placeholder="Any questions or special requests?"
+                        ></textarea>
+                        <div class="char-counter">
+                            <span id="charCount">0</span> / 500 characters
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-button">TAKE YOUR SHOT 💉</button>
+                </div>
+
+                <div class="success-message" id="successMessage">
+                    <h3>💉 Shot Administered!</h3>
+                    <p>We'll contact you within 24 hours.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p><strong>Golden Mile Chrysler</strong></p>
+        <p>Toronto, Ontario</p>
+        <p class="disclaimer">
+            All prices are weekly payments plus HST. $0 down payment. 96-month financing terms. 
+            Subject to credit approval. Dealer permit required. Prices subject to change without notice.
+        </p>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <h4>Your privacy matters</h4>
+                <p>We use cookies to enhance your experience, analyse traffic, and serve personalised content. 'Accept all' to consent per our <a href="#">Cookie</a> and <a href="#">Privacy</a> policies.</p>
+            </div>
+            <div class="cookie-buttons">
+                <button class="cookie-btn cookie-btn-accept" onclick="acceptCookies()">Accept all</button>
+                <button class="cookie-btn cookie-btn-manage" onclick="manageCookies()">Manage preferences</button>
+                <button class="cookie-btn cookie-btn-reject" onclick="rejectCookies()">Reject all</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Character counter
+        const commentsField = document.getElementById('comments');
+        const charCount = document.getElementById('charCount');
+
+        commentsField.addEventListener('input', function() {
+            charCount.textContent = this.value.length;
+        });
+
+        // Form validation and submission
+        const form = document.getElementById('leadForm');
+        const formFields = document.getElementById('formFields');
+        const successMessage = document.getElementById('successMessage');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Reset errors
+            document.querySelectorAll('.error-message').forEach(el => el.style.display = 'none');
+            
+            let isValid = true;
+            
+            // Validate full name (at least 2 words)
+            const fullName = document.getElementById('fullName').value.trim();
+            if (fullName.split(' ').length < 2 || fullName.length < 3) {
+                document.getElementById('nameError').style.display = 'block';
+                isValid = false;
+            }
+            
+            // Validate email
+            const email = document.getElementById('email').value.trim();
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const blockedEmails = ['test@test.com', 'example@example.com'];
+            if (!emailRegex.test(email) || blockedEmails.includes(email.toLowerCase())) {
+                document.getElementById('emailError').style.display = 'block';
+                isValid = false;
+            }
+            
+            // Validate phone (10 digits)
+            const phone = document.getElementById('phone').value.replace(/\D/g, '');
+            const blockedPatterns = ['1111111111', '1234567890', '0000000000'];
+            if (phone.length !== 10 || blockedPatterns.includes(phone)) {
+                document.getElementById('phoneError').style.display = 'block';
+                isValid = false;
+            }
+            
+            if (isValid) {
+                // Simulate form submission
+                console.log('Form data:', {
+                    dealId: 'rx-001',
+                    dealName: '2025 Jeep Compass Sport',
+                    fullName: fullName,
+                    email: email,
+                    phone: phone,
+                    comments: commentsField.value,
+                    timestamp: new Date().toISOString(),
+                    pageUrl: window.location.href
+                });
+                
+                // Show success message
+                formFields.style.display = 'none';
+                successMessage.style.display = 'block';
+                
+                // In production, this would send to backend API
+                // For prototype, just show success
+            }
+        });
+
+        // Phone number formatting
+        document.getElementById('phone').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 0) {
+                if (value.length <= 3) {
+                    value = '(' + value;
+                } else if (value.length <= 6) {
+                    value = '(' + value.slice(0, 3) + ') ' + value.slice(3);
+                } else {
+                    value = '(' + value.slice(0, 3) + ') ' + value.slice(3, 6) + '-' + value.slice(6, 10);
+                }
+            }
+            e.target.value = value;
+        });
+
+        // Cookie Consent Functions
+        function showCookieConsent() {
+            const consent = localStorage.getItem('cookieConsent');
+            if (!consent) {
+                document.getElementById('cookieConsent').classList.add('show');
+            }
+        }
+
+        function acceptCookies() {
+            localStorage.setItem('cookieConsent', 'accepted');
+            document.getElementById('cookieConsent').classList.remove('show');
+        }
+
+        function rejectCookies() {
+            localStorage.setItem('cookieConsent', 'rejected');
+            document.getElementById('cookieConsent').classList.remove('show');
+        }
+
+        function manageCookies() {
+            // In production, this would open a preferences modal
+            alert('Cookie preferences panel would open here. For this prototype, we\'ll accept all cookies.');
+            acceptCookies();
+        }
+
+        // Show consent banner on page load
+        window.addEventListener('load', showCookieConsent);
+    </script>
+</body>
+</html>
